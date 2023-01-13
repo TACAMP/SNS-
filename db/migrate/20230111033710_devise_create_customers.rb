@@ -39,7 +39,7 @@ class DeviseCreateCustomers < ActiveRecord::Migration[7.0]
 
     add_index :customers, :email,                unique: true
     add_index :customers, :reset_password_token, unique: true
-    add_index :customers, :name,                 unique: true
+    add_index :customers, :name
     # add_index :customers, :confirmation_token,   unique: true
     # add_index :customers, :unlock_token,         unique: true
   end
